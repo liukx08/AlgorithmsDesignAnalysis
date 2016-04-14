@@ -86,8 +86,11 @@ void mergeVertex(Vertex *v1, Vertex *v2) {
   merged->first=NULL;
   head=merged;
   Edge *temp=v1->first;
+  Edge *dump=v1->first;
   while(temp!=NULL){
-    if(temp->Ename==v2->Vname)
+    if(temp->Ename==v2->Vname){
+      dump=temp;
+      temp
 }
 
 int main(int argc, char **argv) {
